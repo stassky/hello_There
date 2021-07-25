@@ -1,3 +1,7 @@
 FROM python:3.8-slim
 
-CMD ["python", "print ('Hi there!')"]
+RUN pip install requests
+
+COPY hello_there.py /
+
+CMD ["python", "./hello_there.py"]
