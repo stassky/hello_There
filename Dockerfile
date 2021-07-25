@@ -1,6 +1,6 @@
 FROM python:3.8-slim
 
-RUN pip3 install requests
+RUN pip install requests
 
 COPY hello_there.py /
 
